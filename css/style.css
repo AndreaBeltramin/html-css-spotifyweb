@@ -1,0 +1,49 @@
+/*RESET*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*UTILS*/
+.container {
+	display: flex;
+	height: calc(100vh - 50px);
+}
+
+.side-bar {
+	background-color: black;
+	width: 30px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-section {
+	background-color: rgb(20, 25, 34);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-header {
+	background-color: rgb(18, 20, 23);
+	height: 50px;
+	width: 100%;
+}
+
+.main-content {
+	display: flex;
+	flex: 1 1 100%;
+}
+
+.page-footer {
+	background-color: rgb(40, 40, 40);
+	height: 50px;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.side-bar {
+		width: 70px;
+	}
+}
