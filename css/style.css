@@ -23,6 +23,10 @@ h1 {
 	padding: 20px;
 }
 
+.dp-xs-none {
+	display: none;
+}
+
 /* SIDE-BAR*/
 .side-bar {
 	background-color: black;
@@ -30,13 +34,14 @@ h1 {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-content: center;
 }
 
-i {
-	color: white;
+svg {
 	padding: 10px;
+	width: 40px;
 }
 
 /* MAIN*/
@@ -62,6 +67,7 @@ i {
 	padding: 10px 30px;
 	border: 1px solid white;
 	border-radius: 20px;
+	margin: 20px 10px;
 }
 
 .top-main {
@@ -96,8 +102,29 @@ i {
 	width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 639px) {
 	.side-bar {
-		width: 70px;
+		width: 250px;
+	}
+
+	.dp-s-inline {
+		display: inline;
+	}
+
+	.dp-s-none {
+		display: none;
+	}
+	.side-bar {
+		align-content: flex-start;
+	}
+
+	.side-bar-section {
+		display: flex;
+		flex-direction: column;
+		align-items: ;
+	}
+
+	svg {
+		width: 50px;
 	}
 }
