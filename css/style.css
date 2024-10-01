@@ -10,14 +10,36 @@
 	height: calc(100vh - 50px);
 }
 
+img {
+	width: 100%;
+	display: block;
+}
+
+.white {
+	color: white;
+}
+
+h1 {
+	padding: 20px;
+}
+
+/* SIDE-BAR*/
 .side-bar {
 	background-color: black;
 	width: 30px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
+i {
+	color: white;
+	padding: 10px;
+}
+
+/* MAIN*/
 .main-section {
 	background-color: rgb(20, 25, 34);
 	width: 100%;
@@ -27,15 +49,47 @@
 
 .page-header {
 	background-color: rgb(18, 20, 23);
-	height: 50px;
+	height: 100px;
 	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.call-to-action {
+	background-color: rgb(18, 20, 23);
+	color: white;
+	padding: 10px 30px;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+
+.top-main {
+	text-align: center;
+	color: rgb(123, 125, 130);
+	padding: 10px 0;
+	font-size: 0.9rem;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.top-main span {
+	padding-left: 20px;
 }
 
 .main-content {
 	display: flex;
+	flex-wrap: wrap;
 	flex: 1 1 100%;
+	padding: 0 20px;
 }
 
+.card {
+	width: 50%;
+	padding: 30px 10px 0 0;
+}
+
+/* FOOTER*/
 .page-footer {
 	background-color: rgb(40, 40, 40);
 	height: 50px;
