@@ -38,6 +38,7 @@ h3 {
 	color: gray;
 	padding-top: 10px;
     
+}
 
 .dp-xs-none {
 	display: none;
@@ -63,6 +64,10 @@ ul{
     margin-left: 20px;
     margin-right: 10px;
 	width: 30px;
+}
+
+.spotify-logo--text{
+    margin: 20px 10px 20px 20px;
 }
 
 .text-side {
