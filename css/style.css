@@ -4,6 +4,14 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
+}
+
 /*UTILS*/
 .container {
 	display: flex;
@@ -32,13 +40,11 @@ h2 {
 h3 {
 	font-size: 0.9rem;
 	color: white;
-	padding: 0 20px;
 }
 
 h4 {
 	font-size: 0.7rem;
 	color: gray;
-	padding: 0 20px;
 }
 
 .dp-xs-none {
@@ -52,6 +58,9 @@ ul {
 a {
 	text-decoration: none;
 	color: gray;
+	display: flex;
+	align-items: center;
+	gap: 0 0.5rem;
 }
 
 /* SIDE-BAR*/
@@ -61,33 +70,50 @@ a {
 	width: 50px;
 	flex-shrink: 0;
 	padding: 1rem 0;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
 	gap: 1rem;
+	overflow-y: scroll;
 }
 
-#side-bar .logo,
-#side-bar .links li,
+#side-bar > .user,
+#side-bar .links a,
 #side-bar .playlist-add,
-#side-bar .playlist-list,
-#side-bar .user {
+#side-bar .playlist-list {
 	padding: 0 1rem;
 }
 
-#side-bar .links li {
-	border-left: 6px solid transparent;
+#side-bar .logo img:last-child {
+	max-width: 80%;
+	padding-left: 1rem;
 }
 
-#side-bar .links li.lime {
-	border-color: lime;
-}
-
+#side-bar .logo img:first-child,
 #side-bar .links .icon {
 	width: 30px;
+}
+
+#side-bar .playlist-add .make-playlist span,
+.dowload-text,
+.user-text {
+	padding-left: 0.5rem;
+}
+
+#side-bar .playlist-list {
+	overflow-y: auto;
+}
+
+#side-bar .playlist-list li {
+	padding-top: 10px;
+}
+
+#side-bar .playlist-add .make-playlist,
+#side-bar .links li {
+	padding-top: 10px;
 }
 
 .fa-plus {
@@ -96,17 +122,12 @@ a {
 	padding: 10px;
 }
 
-#side-bar .links a {
-	display: flex;
-	align-items: center;
-}
-
 #side-bar > .user {
 	margin-top: auto;
 }
 
 #side-bar .download-app > img {
-	width: 30px;
+	width: 20px;
 }
 
 #side-bar .user-profile > .container-profile {
@@ -130,13 +151,13 @@ a {
 
 .download-app {
 	display: flex;
-	align-items: center;
+	justify-content: center;
 }
 
 .user-profile {
 	display: flex;
 	align-items: center;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 /* MAIN*/
@@ -145,7 +166,7 @@ a {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow: scroll;
+	overflow-y: auto;
 }
 
 .page-header {
@@ -314,13 +335,16 @@ a {
 	/*SIDE-BAR*/
 
 	#side-bar {
-		width: 250px;
+		width: 200px;
 		align-items: flex-start;
 	}
 
-	#side-bar-section {
-		display: flex;
-		flex-direction: column;
+	#side-bar .links li {
+		border-left: 4px solid transparent;
+	}
+
+	#side-bar .links li.lime {
+		border-color: lime;
 	}
 
 	/*FOOTER*/
