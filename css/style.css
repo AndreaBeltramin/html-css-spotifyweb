@@ -61,6 +61,18 @@ a {
 	color: gray;
 }
 
+h4:hover {
+	color: white;
+}
+
+li:hover {
+	color: white;
+}
+
+span:hover {
+	color: white;
+}
+
 /* SIDE-BAR*/
 
 #side-bar {
@@ -75,6 +87,7 @@ a {
 	align-content: center;
 	align-items: center;
 	gap: 1rem;
+	overflow: hidden;
 }
 
 #side-bar > .user,
@@ -196,6 +209,15 @@ a {
 
 .main-content {
 	padding: 15px;
+}
+
+.recntly-played img {
+	position: absolute;
+}
+
+.recently-played i {
+	position: relative;
+	color: white;
 }
 
 .recently-played {
