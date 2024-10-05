@@ -33,12 +33,13 @@ h2 {
 }
 
 h3 {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	color: white;
 }
 
 h4 {
-	font-size: 0.7rem;
+	font-size: 0.8rem;
+	padding-top: 10px;
 }
 
 h5 {
@@ -84,9 +85,8 @@ span:hover {
 
 	display: flex;
 	flex-direction: column;
-	align-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 0.5rem;
 	overflow: hidden;
 }
 
@@ -138,6 +138,7 @@ span:hover {
 
 #side-bar .download-app > img {
 	width: 20px;
+	padding-top: 10px;
 }
 
 #side-bar .user-profile > .container-profile {
@@ -162,6 +163,15 @@ span:hover {
 .download-app {
 	display: flex;
 	justify-content: center;
+	position: relative;
+}
+
+.user .underline-gray {
+	left: 10px;
+	position: absolute;
+	border-bottom: 2px solid gray;
+	width: 180px;
+	padding-top: 5px;
 }
 
 .user-profile {
@@ -197,7 +207,6 @@ span:hover {
 
 .top-main {
 	text-align: center;
-	color: rgb(123, 125, 130);
 	font-size: 0.9rem;
 	line-height: 50px;
 	padding: 0 15px;
@@ -205,6 +214,20 @@ span:hover {
 
 .top-main span {
 	padding-right: 20px;
+}
+
+.top-main .underline {
+	position: relative;
+}
+
+.top-main .green-line {
+	position: absolute;
+	height: 3px;
+	width: 40px;
+	color: lime;
+	border-bottom: 2px solid lime;
+	bottom: -10px;
+	right: 55px;
 }
 
 .main-content {
@@ -274,7 +297,8 @@ span:hover {
 
 .left-part i {
 	display: block;
-	padding-left: 15px;
+	padding-left: 10px;
+	padding-bottom: 5px;
 }
 
 .song-title {
@@ -388,6 +412,10 @@ span:hover {
 
 	.page-footer .left-part .song-title .name {
 		display: flex;
+	}
+
+	.page-footer .left-part .song-title .name h6:first-child {
+		padding-right: 5px;
 	}
 }
 
