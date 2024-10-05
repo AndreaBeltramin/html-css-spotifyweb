@@ -167,11 +167,11 @@ span:hover {
 }
 
 .user .underline-gray {
-	left: 10px;
 	position: absolute;
 	border-bottom: 2px solid gray;
 	width: 180px;
-	padding-top: 5px;
+	left: -10px;
+	top: 40px;
 }
 
 .user-profile {
@@ -283,6 +283,7 @@ span:hover {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	gap: 1rem;
 }
 
 .left-part {
@@ -306,36 +307,40 @@ span:hover {
 	line-height: 12px;
 }
 
+.center-part {
+	flex-grow: 1;
+}
+
 .button-player {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	text-align: center;
+	word-spacing: 30px;
 	color: white;
 }
 
-.player {
+.progress-bar-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 0.7rem;
 	color: white;
 	padding-top: 15px;
 }
 
-.player span {
+.progress-bar-container span {
 	font-size: 0.7rem;
 }
 
-.player > .progress-bar {
+.progress-bar-container > .progress-bar {
 	flex-grow: 1;
+	min-width: 100px;
 	max-width: 500px;
-	min-width: 150px;
 	height: 4px;
 	background-color: gray;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
-.player > .progress-bar > .progress {
+.progress-bar-container > .progress-bar > .progress {
 	width: 20%;
 	height: 100%;
 	background-color: white;
@@ -355,11 +360,11 @@ span:hover {
 
 .right-part > .volume-bar {
 	flex-grow: 1;
-	max-width: 80px;
-	min-width: 50px;
+	min-width: 80px;
 	height: 4px;
 	background-color: gray;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .right-part > .volume-bar > .volume {
