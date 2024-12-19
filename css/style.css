@@ -119,6 +119,7 @@ span:hover {
 
 #side-bar .playlist-list li {
 	padding-top: 10px;
+	cursor: pointer;
 }
 
 #side-bar .playlist-add .make-playlist,
@@ -130,10 +131,12 @@ span:hover {
 	background-color: gray;
 	color: black;
 	padding: 10px;
+	cursor: pointer;
 }
 
 #side-bar > .user {
 	margin-top: auto;
+	cursor: pointer;
 }
 
 #side-bar .download-app > img {
@@ -203,6 +206,7 @@ span:hover {
 	border: 1px solid white;
 	border-radius: 20px;
 	margin: 20px 10px;
+	cursor: pointer;
 }
 
 .top-main {
@@ -214,6 +218,7 @@ span:hover {
 
 .top-main span {
 	padding-right: 20px;
+	cursor: pointer;
 }
 
 .top-main .underline {
@@ -270,11 +275,39 @@ span:hover {
 	padding: 20px 10px 0 0;
 }
 
+.card-img {
+	position: relative;
+}
+
 .card-title {
 	text-align: center;
 	padding-top: 10px;
 }
 
+.card .play-button {
+	display: none;
+}
+
+.card:hover .play-button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+.card .circle-play-button {
+	display: none;
+}
+
+.card:hover .circle-play-button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	font-size: 5rem;
+}
 /* FOOTER*/
 .page-footer {
 	background-color: rgb(40, 40, 40);
@@ -300,6 +333,7 @@ span:hover {
 	display: block;
 	padding-left: 10px;
 	padding-bottom: 5px;
+	cursor: pointer;
 }
 
 .song-title {
@@ -315,6 +349,7 @@ span:hover {
 	text-align: center;
 	word-spacing: 30px;
 	color: white;
+	cursor: pointer;
 }
 
 .progress-bar-container {
@@ -417,6 +452,7 @@ span:hover {
 
 	.page-footer .left-part .song-title .name {
 		display: flex;
+		padding-top: 5px;
 	}
 
 	.page-footer .left-part .song-title .name h6:first-child {
